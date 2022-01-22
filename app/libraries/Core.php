@@ -6,7 +6,7 @@
  */
 class Core
 {
- protected $_currentController = 'Pages';
+ protected $_currentController = 'Home';
  protected $_currentMethod     = 'index';
  protected $_params            = [];
 

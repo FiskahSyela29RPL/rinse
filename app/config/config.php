@@ -8,3 +8,4 @@ define('DB_NAME', 'rinse');
 define('APPROOT', dirname(dirname(__FILE__)));
 define('URLROOT', 'http://localhost/rinse');
 define('SITENAME', 'Rinse - Laundry');
+define('BASEURL', 'http://localhost/rinse/public');
