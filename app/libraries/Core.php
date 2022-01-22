@@ -13,10 +13,14 @@ class Core
  public function __construct()
  {
   $url = $this->getUrl();
+
+  if ($url == null) {
+   $url = [$this->_currentController];
+  }
+
   if (file_exists('../app/controllers/' . ucwords($url[0]) . '.php')) {
    $this->_currentController = ucwords($url[0]);
    unset($url[0]);
-   var_dump($url); 
   }
 
   require_once '../app/controllers/' . $this->_currentController . '.php';
@@ -29,11 +33,11 @@ class Core
    }
   }
 
-  // // Get params
-  // $this->params = $url ? array_values($url) : [];
+  if (!empty($url)) {
+   $this->_params = array_values($url);
+  }
 
-  // // Call a callback with array of params
-  // call_user_func_array([$this->currentController, $this->currentMethod], $this->params);
+  call_user_func_array([$this->_currentController, $this->_currentMethod], $this->_params);
  }
 
  public function getUrl()

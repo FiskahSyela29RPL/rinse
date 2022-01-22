@@ -5,15 +5,11 @@ class Pages extends Controller
 
  public function __construct()
  {
-
+  echo 'Halo dari default controller';
  }
 
  public function index()
  {
-  $data = [
-   'tittle' => 'Home page',
-  ];
-
-  // $this->view('index', $data);
+  echo 'halo juga dari default method';
  }
 }
