@@ -6,7 +6,7 @@
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-light text-left p-5">
               <div class="brand-logo">
-                <img src="../../assets/images/logo.svg">
+                <img src="<?=BASEURL; ?>/images/logo.svg">
               </div>
               <h4>New here?</h4>
               <h6 class="font-weight-light">Signing up is easy. It only takes a few steps</h6>
@@ -39,11 +39,11 @@
                   </div>
                 </div>
                 <div class="mt-3">
-                  <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn"
-                    href="../../index.html">SIGN UP</a>
+                  <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" href="">SIGN
+                    UP</a>
                 </div>
-                <div class="text-center mt-4 font-weight-light"> Already have an account? <a href="login.html"
-                    class="text-primary">Login</a>
+                <div class="text-center mt-4 font-weight-light"> Already have an account? <a
+                    href="<?=URLROOT; ?>/registrasi" class="text-primary">Login</a>
                 </div>
               </form>
             </div>

@@ -6,13 +6,15 @@ class Registrasi extends Controller
  // ini adalah method login
  public function index()
  {
-  $this->view('partials/header');
+  $data['judul'] = 'Login';
+  $this->view('partials/header', $data);
   $this->view('registrasi/login');
  }
 
  public function registrasi()
  {
-  $this->view('partials/header');
+  $data['judul'] = 'Registrasi';
+  $this->view('partials/header', $data);
   $this->view('registrasi/registrasi');
  }
 

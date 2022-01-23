@@ -6,7 +6,7 @@
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-light text-left p-5">
               <div class="brand-logo">
-                <img src="../../assets/images/logo.svg">
+                <img src="<?=BASEURL; ?>/images/logo.svg">
               </div>
               <h4>Hello! let's get started</h4>
               <h6 class="font-weight-light">Sign in to continue.</h6>
@@ -20,8 +20,8 @@
                     placeholder="Password">
                 </div>
                 <div class="mt-3">
-                  <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn"
-                    href="../../index.html">SIGN IN</a>
+                  <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" href="">SIGN
+                    IN</a>
                 </div>
                 <div class="my-2 d-flex justify-content-between align-items-center">
                   <div class="form-check">
@@ -34,8 +34,12 @@
                   <button type="button" class="btn btn-block btn-facebook auth-form-btn">
                     <i class="mdi mdi-facebook mr-2"></i>Connect using facebook </button>
                 </div>
-                <div class="text-center mt-4 font-weight-light"> Don't have an account? <a href="register.html"
-                    class="text-primary">Create</a>
+                <div class="mb-2">
+                  <button type="button" class="btn btn-block btn-google auth-form-btn">
+                    <i class="mdi mdi-google mr-2"></i>Connect using google </button>
+                </div>
+                <div class="text-center mt-4 font-weight-light"> Don't have an account? <a
+                    href="<?=URLROOT; ?>/registrasi/registrasi" class="text-primary">Create</a>
                 </div>
               </form>
             </div>
@@ -44,10 +48,10 @@
       </div>
     </div>
   </div>
-  <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
-  <script src="../../assets/js/off-canvas.js"></script>
-  <script src="../../assets/js/hoverable-collapse.js"></script>
-  <script src="../../assets/js/misc.js"></script>
+  <script src="<?=BASEURL; ?>/vendors/js/vendor.bundle.base.js"></script>
+  <script src="<?=BASEURL; ?>/js/off-canvas.js"></script>
+  <script src="<?=BASEURL; ?>/js/hoverable-collapse.js"></script>
+  <script src="<?=BASEURL; ?>/js/misc.js"></script>
 </body>
 
 </html>
