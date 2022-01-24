@@ -8,38 +8,41 @@
               <div class="brand-logo">
                 <img src="<?=BASEURL; ?>/images/logo.svg">
               </div>
-              <h4>Hello! let's get started</h4>
-              <h6 class="font-weight-light">Sign in to continue.</h6>
+              <h4>Masuk untuk melanjutkan</h4>
               <form class="pt-3">
                 <div class="form-group">
-                  <input type="email" class="form-control form-control-lg" id="exampleInputEmail1"
-                    placeholder="Username">
+                  <select class="form-control form-control-lg" id="exampleFormControlSelect2">
+                    <option>Pemilik</option>
+                    <option>Admin</option>
+                    <option>Produksi</option>
+                    <option>Kurir</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <input type=2 pattern=”^\d{10}$” class="form-control form-control-lg" id="exampleInputEmail1"
+                    placeholder="Nomor Telefon" required>
                 </div>
                 <div class="form-group">
                   <input type="password" class="form-control form-control-lg" id="exampleInputPassword1"
-                    placeholder="Password">
+                    placeholder="Password" required>
                 </div>
                 <div class="mt-3">
-                  <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" href="">SIGN
-                    IN</a>
+                  <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn"
+                    href="">MASUK</a>
                 </div>
                 <div class="my-2 d-flex justify-content-between align-items-center">
                   <div class="form-check">
                     <label class="form-check-label text-muted">
-                      <input type="checkbox" class="form-check-input"> Keep me signed in </label>
+                      <input type="checkbox" class="form-check-input"> Ingat saya </label>
                   </div>
-                  <a href="#" class="auth-link text-black">Forgot password?</a>
-                </div>
-                <div class="mb-2">
-                  <button type="button" class="btn btn-block btn-facebook auth-form-btn">
-                    <i class="mdi mdi-facebook mr-2"></i>Connect using facebook </button>
+                  <a href="#" class="auth-link text-black">Lupa password?</a>
                 </div>
                 <div class="mb-2">
                   <button type="button" class="btn btn-block btn-google auth-form-btn">
-                    <i class="mdi mdi-google mr-2"></i>Connect using google </button>
+                    <i class="mdi mdi-google mr-2"></i>Masuk dengan google </button>
                 </div>
-                <div class="text-center mt-4 font-weight-light"> Don't have an account? <a
-                    href="<?=URLROOT; ?>/registrasi/registrasi" class="text-primary">Create</a>
+                <div class="text-center mt-4 font-weight-light"> Belum punya akun? <a
+                    href="<?=URLROOT; ?>/registrasi/registrasi" class="text-primary">Daftar sekarang</a>
                 </div>
               </form>
             </div>

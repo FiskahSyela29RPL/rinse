@@ -8,42 +8,36 @@
               <div class="brand-logo">
                 <img src="<?=BASEURL; ?>/images/logo.svg">
               </div>
-              <h4>New here?</h4>
-              <h6 class="font-weight-light">Signing up is easy. It only takes a few steps</h6>
+              <h4>Mendaftar untuk melanjutkan</h4>
+              <h6 class="font-weight-light">Pastikan email & telefon aktif agar bisa digunakan </h6>
               <form class="pt-3">
                 <div class="form-group">
-                  <input type="text" class="form-control form-control-lg" id="exampleInputUsername1"
-                    placeholder="Username">
+                  <input type="text" class="form-control form-control-lg" id="exampleInputUsername1" placeholder="Nama">
                 </div>
                 <div class="form-group">
                   <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email">
                 </div>
                 <div class="form-group">
-                  <select class="form-control form-control-lg" id="exampleFormControlSelect2">
-                    <option>Country</option>
-                    <option>United States of America</option>
-                    <option>United Kingdom</option>
-                    <option>India</option>
-                    <option>Germany</option>
-                    <option>Argentina</option>
-                  </select>
-                </div>
-                <div class="form-group">
                   <input type="password" class="form-control form-control-lg" id="exampleInputPassword1"
                     placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <input type=2 pattern=”^\d{10}$” class="form-control form-control-lg" id="exampleInputEmail1"
+                    placeholder="Nomor Telefon" required>
                 </div>
                 <div class="mb-4">
                   <div class="form-check">
                     <label class="form-check-label text-muted">
-                      <input type="checkbox" class="form-check-input"> I agree to all Terms & Conditions </label>
+                      <input type="checkbox" class="form-check-input"> Dengan mendaftar, saya setuju dengan syarat &
+                      ketentuan yang berlaku </label>
                   </div>
                 </div>
                 <div class="mt-3">
-                  <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" href="">SIGN
-                    UP</a>
+                  <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn"
+                    href="">DAFTAR</a>
                 </div>
-                <div class="text-center mt-4 font-weight-light"> Already have an account? <a
-                    href="<?=URLROOT; ?>/registrasi" class="text-primary">Login</a>
+                <div class="text-center mt-4 font-weight-light"> Sudah punya akun? <a href="<?=URLROOT; ?>/registrasi"
+                    class="text-primary">Masuk</a>
                 </div>
               </form>
             </div>
@@ -56,14 +50,14 @@
   </div>
   <!-- container-scroller -->
   <!-- plugins:js -->
-  <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+  <script src="<?=BASEURL; ?>/vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
   <!-- End plugin js for this page -->
   <!-- inject:js -->
-  <script src="../../assets/js/off-canvas.js"></script>
-  <script src="../../assets/js/hoverable-collapse.js"></script>
-  <script src="../../assets/js/misc.js"></script>
+  <script src="<?=BASEURL; ?>/js/off-canvas.js"></script>
+  <script src="<?=BASEURL; ?>/js/hoverable-collapse.js"></script>
+  <script src="<?=BASEURL; ?>/js/misc.js"></script>
   <!-- endinject -->
 </body>
 
