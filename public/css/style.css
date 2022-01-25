@@ -8578,7 +8578,7 @@ button.bg-dark:focus {
 .pt-1,
 .py-1 {
   padding-top: 0.25rem !important; }
-  
+
 .pr-1,
 .px-1 {
   padding-right: 0.25rem !important; }
@@ -10742,12 +10742,6 @@ code {
 .bg-gradient-light {
   background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#e4e4e9)) !important;
   background: linear-gradient(to bottom, #f4f4f4, #e4e4e9) !important; }
-
-.bg-gradient-dark {
-  background: linear-gradient(89deg, #5e7188, #3e4b5b) !important; }
-
-.bg-gradient-brown {
-  background: linear-gradient(89deg, #D2691E, #D2B48C) !important; }
 
 .bg-gradient-dark {
   background: linear-gradient(89deg, #5e7188, #3e4b5b) !important; }

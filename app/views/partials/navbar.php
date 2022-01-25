@@ -35,15 +35,15 @@
               </div>
             </a>
             <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="<?=URLROOT ?>/outlet">
                 <i class="mdi mdi-cached mr-2 text-success"></i> Ganti Outlet </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="">
                 <i class="mdi mdi-logout mr-2 text-primary"></i> Signout </a>
             </div>
           </li>
           <li class="nav-item nav-logout d-none d-lg-block">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="<?=URLROOT; ?>/pelanggan">
               <i class="mdi mdi-plus"></i>
             </a>
           </li>
