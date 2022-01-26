@@ -77,4 +77,16 @@ class Pelanggan extends Controller
 
  }
 
+ public function detilorder()
+ {
+  $data['judul'] = 'Detail Transaksi';
+
+  $this->view('partials/header', $data);
+  $this->view('partials/navbar');
+  $this->view('partials/sidebar');
+  $this->view('pelanggan/rincian');
+  $this->view('partials/footer');
+
+ }
+
 }

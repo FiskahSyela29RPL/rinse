@@ -2,82 +2,105 @@
 
 class Pesanan extends Controller
 {
-  public function konfirmasi()
-  {
+ public function index()
+ {
+  $data['judul'] = 'Pesanan';
+  $this->view('partials/header', $data);
+  $this->view('partials/navbar');
+  $this->view('partials/sidebar');
+  $this->view('pesanan/konfirmasi');
+  $this->view('partials/footer');
 
-    $data['judul'] = 'Konfirmasi';
+ }
+ public function konfirmasi()
+ {
 
-    $this->view('partials/header', $data);
-    $this->view('partials/navbar');
-    $this->view('partials/sidebar');
-    $this->view('pesanan/konfirmasi');
-    $this->view('partials/footer');
+  $data['judul'] = 'Konfirmasi';
 
-  }
+  $this->view('partials/header', $data);
+  $this->view('partials/navbar');
+  $this->view('partials/sidebar');
+  $this->view('pesanan/konfirmasi');
+  $this->view('partials/footer');
 
-  public function penjemputan()
-  {
+ }
 
-    $data['judul'] = 'Penjemputan';
+ public function detil()
+ {
 
-    $this->view('partials/header', $data);
-    $this->view('partials/navbar');
-    $this->view('partials/sidebar');
-    $this->view('pesanan/penjemputan');
-    $this->view('partials/footer');
+  $data['judul'] = 'Detail Konfirmasi';
 
-  }
+  $this->view('partials/header', $data);
+  $this->view('partials/navbar');
+  $this->view('partials/sidebar');
+  $this->view('pesanan/detil');
+  $this->view('partials/footer');
 
-  public function antrian()
-  {
+ }
 
-    $data['judul'] = 'Antrian';
+ public function penjemputan()
+ {
 
-    $this->view('partials/header', $data);
-    $this->view('partials/navbar');
-    $this->view('partials/sidebar');
-    $this->view('pesanan/antrian');
-    $this->view('partials/footer');
+  $data['judul'] = 'Penjemputan';
 
-  }
+  $this->view('partials/header', $data);
+  $this->view('partials/navbar');
+  $this->view('partials/sidebar');
+  $this->view('pesanan/penjemputan');
+  $this->view('partials/footer');
 
-  public function proses()
-  {
+ }
 
-    $data['judul'] = 'Proses';
+ public function proses()
+ {
 
-    $this->view('partials/header', $data);
-    $this->view('partials/navbar');
-    $this->view('partials/sidebar');
-    $this->view('pesanan/proses');
-    $this->view('partials/footer');
+  $data['judul'] = 'Proses';
 
-  }
+  $this->view('partials/header', $data);
+  $this->view('partials/navbar');
+  $this->view('partials/sidebar');
+  $this->view('pesanan/proses');
+  $this->view('partials/footer');
 
-  public function ambil()
-  {
+ }
 
-    $data['judul'] = 'Ambil';
+ public function ambil()
+ {
 
-    $this->view('partials/header', $data);
-    $this->view('partials/navbar');
-    $this->view('partials/sidebar');
-    $this->view('pesanan/ambil');
-    $this->view('partials/footer');
+  $data['judul'] = 'Ambil';
 
-  }
+  $this->view('partials/header', $data);
+  $this->view('partials/navbar');
+  $this->view('partials/sidebar');
+  $this->view('pesanan/ambil');
+  $this->view('partials/footer');
 
-  public function antar()
-  {
+ }
 
-    $data['judul'] = 'Antar';
+ public function antar()
+ {
 
-    $this->view('partials/header', $data);
-    $this->view('partials/navbar');
-    $this->view('partials/sidebar');
-    $this->view('pesanan/antar');
-    $this->view('partials/footer');
+  $data['judul'] = 'Antar';
 
-  }
+  $this->view('partials/header', $data);
+  $this->view('partials/navbar');
+  $this->view('partials/sidebar');
+  $this->view('pesanan/antar');
+  $this->view('partials/footer');
+
+ }
+
+ public function bayar()
+ {
+
+  $data['judul'] = 'Bayar';
+
+  $this->view('partials/header', $data);
+  $this->view('partials/navbar');
+  $this->view('partials/sidebar');
+  $this->view('pesanan/bayar');
+  $this->view('partials/footer');
+
+ }
 
 }

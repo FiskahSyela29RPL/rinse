@@ -22,10 +22,19 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../../pages/icons/mdi.html">
+        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
           <span class="menu-title">Transaksi</span>
+          <i class="menu-arrow"></i>
           <i class="mdi mdi-plus-circle menu-icon"></i>
         </a>
+        <div class="collapse" id="ui-basic">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="<?=URLROOT; ?>/pelanggan">Transaksi</a>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="<?=URLROOT; ?>/pelanggan/tambah">Tambah Pelanggan</a>
+            </li>
+          </ul>
+        </div>
       </li>
       <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
@@ -35,16 +44,14 @@
         </a>
         <div class="collapse" id="ui-basic">
           <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/buttons.html">Konfirmasi</a></li>
-            <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/typography.html">Penjemputan</a>
+            <li class="nav-item"> <a class="nav-link" href="<?=URLROOT; ?>/pesanan/konfirmasi">Konfirmasi</a></li>
+            <li class="nav-item"> <a class="nav-link" href="<?=URLROOT; ?>/pesanan/penjemputan">Penjemputan</a>
             </li>
-            <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/typography.html">Antrian</a>
+            <li class="nav-item"> <a class="nav-link" href="<?=URLROOT; ?>/pesanan/proses">Proses</a>
             </li>
-            <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/typography.html">Proses</a>
+            <li class="nav-item"> <a class="nav-link" href="<?=URLROOT; ?>/pesanan/ambil">Siap ambil</a>
             </li>
-            <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/typography.html">Siap ambil</a>
-            </li>
-            <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/typography.html">Siap antar</a>
+            <li class="nav-item"> <a class="nav-link" href="<?=URLROOT; ?>/pesanan/antar">Siap antar</a>
             </li>
           </ul>
         </div>
