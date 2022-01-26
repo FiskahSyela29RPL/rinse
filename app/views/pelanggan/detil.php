@@ -54,8 +54,10 @@
           <tbody>
             <tr>
               <td> 1 </td>
-              <td class="py-1">
-                <img src="<?=BASEURL ?>/images/faces-clipart/pic-1.png" alt="image" />
+              <td>
+                <a href="<?=URLROOT ?>/pelanggan/detilorder">
+                  <p></p>
+                </a>
               </td>
               <td> Herman Beck </td>
               <td><label class="badge badge-danger">Baru</label></td>
@@ -91,14 +93,10 @@
           <thead>
             <tr>
               <th> No </th>
-              <th> User </th>
-              <th> Nama </th>
+              <th> Kode Transaksi </th>
+              <th> Total </th>
+              <th> Tanggal </th>
               <th> Status </th>
-              <th> Alamat </th>
-              <th> Email </th>
-              <th> Telepon </th>
-              <th> Jenis Kelamin </th>
-              <th> Top-Up </th>
             </tr>
           </thead>
           <tbody>
@@ -107,7 +105,9 @@
               <td class="py-1">
                 <img src="<?=BASEURL ?>/images/faces-clipart/pic-1.png" alt="image" />
               </td>
-              <td> Herman Beck </td>
+              <td>
+
+              </td>
               <td><label class="badge badge-danger">Baru</label></td>
               <td>Jl. Sepertinya ikan</td>
               <td>saturniesm@gmail.com</td>

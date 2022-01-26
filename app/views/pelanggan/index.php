@@ -7,7 +7,7 @@
     </ol>
   </nav>
 </div>
-<p class="card-description"> Cari pelanggan untuk melakukan <mark>Transaksi</mark>, klik profile untuk detail.</p>
+<p class="card-description"> Klik ID pesanan untuk melihat detail dan <mark>mengkonfirmasi</mark> pesanan.</p>
 <div class="row">
   <div class="col-lg-12 grid-margin stretch-card">
     <div class="card">
