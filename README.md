@@ -1,3 +1,3 @@
-# UKL PHP - Rinse
+# Rinse
 
-This is the project I created for UKL. Currently on progress so wish me luck.
+Rinse is a laundry web-based managment app. Rinse helps you to manage your laundry easily. UKL dulu kita, ngide kemudian.
