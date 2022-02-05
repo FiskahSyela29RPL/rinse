@@ -10,20 +10,30 @@
               </div>
               <h4>Mendaftar untuk melanjutkan</h4>
               <h6 class="font-weight-light">Pastikan email & telefon aktif agar bisa digunakan </h6>
-              <form class="pt-3">
+              <form class="pt-3" id="register-form" method="POST" action="<?=URLROOT; ?>/registrasi/registrasi">
                 <div class="form-group">
-                  <input type="text" class="form-control form-control-lg" id="exampleInputUsername1" placeholder="Nama">
+                  <input type="text" class="form-control form-control-lg" id="" placeholder="Nama" name="nama">
+                  <p><?=$data['namaError']; ?></p>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email">
+                  <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email"
+                    name="email">
+                  <p><?=$data['emailError']; ?></p>
                 </div>
                 <div class="form-group">
                   <input type="password" class="form-control form-control-lg" id="exampleInputPassword1"
-                    placeholder="Password">
+                    placeholder="Password" name="password">
+                  <p><?=$data['passwordError']; ?></p>
                 </div>
                 <div class="form-group">
-                  <input type=2 pattern=”^\d{10}$” class="form-control form-control-lg" id="exampleInputEmail1"
-                    placeholder="Nomor Telefon" required>
+                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1"
+                    placeholder="Password" name="konfirmasiPassword">
+                  <p><?=$data['konfirmasiPasswordError']; ?></p>
+                </div>
+                <div class="form-group">
+                  <input type="number" class="form-control form-control-lg" id="exampleInputEmail1"
+                    placeholder="Nomor Telefon" name="nomor" required>
+                  <p><?=$data['nomorError']; ?></p>
                 </div>
                 <div class="mb-4">
                   <div class="form-check">
@@ -33,8 +43,8 @@
                   </div>
                 </div>
                 <div class="mt-3">
-                  <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn"
-                    href="">DAFTAR</a>
+                  <button type="submit"
+                    class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn">DAFTAR</button>
                 </div>
                 <div class="text-center mt-4 font-weight-light"> Sudah punya akun? <a href="<?=URLROOT; ?>/registrasi"
                     class="text-primary">Masuk</a>

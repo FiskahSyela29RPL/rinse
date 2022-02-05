@@ -2,7 +2,7 @@
   <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
       <li class="nav-item nav-profile">
-        <a href="#" class="nav-link">
+        <a href="<?=BASEURL; ?>" class="nav-link">
           <div class="nav-profile-image">
             <img src="<?=URLROOT; ?>/images/faces/face1.jpg" alt="profile">
             <span class="login-status online"></span>
@@ -77,10 +77,26 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../../pages/icons/mdi.html">
+        <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false"
+          aria-controls="general-pages">
           <span class="menu-title">Akun</span>
+          <i class="menu-arrow"></i>
           <i class="mdi mdi-account menu-icon"></i>
         </a>
+        <div class="collapse" id="general-pages">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="<?=URLROOT; ?>"> Kelola Transaksi </a>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="<?=URLROOT; ?><?=URLROOT; ?>"> Kelola Outlet </a>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="<?=URLROOT; ?>"> Kelola Layanan </a></li>
+            <li class="nav-item"> <a class="nav-link" href="<?=URLROOT; ?>"> Kelola Pegawai </a>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="<?=URLROOT; ?>"> Kelola Keuangan </a>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="<?=URLROOT; ?>"> Porfil Pemilik </a></li>
+          </ul>
+        </div>
       </li>
     </ul>
   </nav>

@@ -6,11 +6,12 @@ class Home extends Controller
  public function index()
  {
   $data['judul'] = 'Rinse';
-
+  $data['users'] = $this->model('homeModel')->getNama();
+  $data['user']  = $this->model('homeModel')->getMember();
   $this->view('partials/header', $data);
   $this->view('partials/navbar');
   $this->view('partials/sidebar');
-  $this->view('home/index');
+  $this->view('home/index', $data);
   $this->view('partials/footer');
 
  }

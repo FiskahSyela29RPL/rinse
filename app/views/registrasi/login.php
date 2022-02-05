@@ -11,20 +11,24 @@
               <h4>Masuk untuk melanjutkan</h4>
               <form class="pt-3">
                 <div class="form-group">
-                  <select class="form-control form-control-lg" id="exampleFormControlSelect2">
-                    <option>Pemilik</option>
-                    <option>Admin</option>
-                    <option>Produksi</option>
-                    <option>Kurir</option>
+                  <select class="form-control form-control-lg" id="" name="role">
+                    <option value="pemilik">Pemilik</option>
+                    <option value="admin">Admin</option>
+                    <option value="produksi">Produksi</option>
+                    <option value="kurir">Kurir</option>
                   </select>
                 </div>
                 <div class="form-group">
-                  <input type=2 pattern=”^\d{10}$” class="form-control form-control-lg" id="exampleInputEmail1"
-                    placeholder="Nomor Telefon" required>
+                  <input type=2 pattern=”^\d{10}$” class="form-control form-control-lg" id="" placeholder="Email"
+                    name="email" required>
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1"
-                    placeholder="Password" required>
+                  <input type="password" class="form-control form-control-lg" id="" placeholder="Password"
+                    name="password" required>
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control form-control-lg" id="" placeholder="Konfirmasi Password"
+                    name="konfirmasiPassword" required>
                 </div>
                 <div class="mt-3">
                   <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn"
@@ -33,9 +37,9 @@
                 <div class="my-2 d-flex justify-content-between align-items-center">
                   <div class="form-check">
                     <label class="form-check-label text-muted">
-                      <input type="checkbox" class="form-check-input"> Ingat saya </label>
+                      <input type="checkbox" class="form-check-input" name="rememberMe"> Ingat saya </label>
                   </div>
-                  <a href="#" class="auth-link text-black">Lupa password?</a>
+                  <a href="" class="auth-link text-black">Lupa password?</a>
                 </div>
                 <div class="mb-2">
                   <button type="button" class="btn btn-block btn-google auth-form-btn">
